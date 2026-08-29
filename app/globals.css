@@ -1,0 +1,36 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@import 'shadcn/tailwind.css';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --font-sans: 'Montserrat', 'Arial', sans-serif;
+  --font-serif: 'Cormorant Garamond', 'Georgia', serif;
+  --font-script: 'Great Vibes', cursive;
+  --color-cream: #ffffff;
+  --color-ink: #34312e;
+  --color-terracotta: #687548;
+  --color-gold: #9aa477;
+  --color-sage: #7d8b5d;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+}
+
+:root { color-scheme: light; --background: #ffffff; --foreground: #343b2b; --card: #ffffff; --card-foreground: #343b2b; --primary: #687548; --primary-foreground: #ffffff; --border: #dfe4d5; --input: #dfe4d5; --ring: #687548; }
+* { @apply border-border outline-ring/50; }
+html { scroll-behavior: smooth; }
+body { @apply bg-background text-foreground; font-family: 'Montserrat', Arial, sans-serif; }
+.font-sans { font-family: 'Montserrat', Arial, sans-serif; }
+.font-serif { font-family: 'Cormorant Garamond', Georgia, serif; }
+.font-script { font-family: 'Great Vibes', cursive; }
+::selection { background: #c85a29; color: #fff; }
+@keyframes bounce { 0%, 100% { transform: translateY(-8%); animation-timing-function: cubic-bezier(0.8,0,1,1); } 50% { transform: none; animation-timing-function: cubic-bezier(0,0,0.2,1); } }
+.animate-bounce { animation: bounce 2s infinite; }
