@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react'
 import { CalendarDays, Check, ChevronDown, Clock3, Heart, MapPin, MessageCircle, Music2, Pause, Play, Volume2, VolumeX } from 'lucide-react'
 
 const WEDDING_DATE = new Date('2026-12-19T17:00:00-03:00')
-const WHATSAPP_URL = 'https://wa.me/558599446492'
+const WHATSAPP_URL = 'https://wa.me/+5585994464942'
 const MAPS_URL = 'https://www.google.com/maps/search/?api=1&query=Rua+Fausto+Aguiar+655,+Cambeba'
 const photos = {
   cover: '/capa-casamento.png',
